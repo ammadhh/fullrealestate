@@ -1,0 +1,8 @@
+{
+    "appName": "Zero Agent",
+    "headerColor": "#3b5998",
+    "primaryColor": "#4267B2",
+    "secondaryColor": "#898F9C",
+    "fontFamily": "Arial, sans-serif",
+    "apiBaseUrl": "http://localhost:5000/api"
+  }

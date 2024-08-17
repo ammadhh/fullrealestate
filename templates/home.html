@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome to Zillow Clone</h1>
+    <div class="row">
+        {% for house in houses %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='uploads/' + house.photo) }}" class="card-img-top" alt="{{ house.address }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ house.address }}</h5>
+                        <p class="card-text">${{ "{:,.2f}".format(house.price) }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
